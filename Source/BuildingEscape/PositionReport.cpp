@@ -21,8 +21,10 @@ void UPositionReport::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
-	
+	FString ObjectName = GetOwner()->GetName();
+	FString ObejctPos = GetOwner()->GetActorLocation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("Position reporter initialised on %s!"), *ObjectName);
+	UE_LOG(LogTemp, Warning, TEXT("Position of %s: %s"), *ObjectName, *ObejctPos);
 }
 
 
