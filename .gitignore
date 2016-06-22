@@ -12,3 +12,4 @@ Content/StarterContent/
 # VS Generated File #
 #####################
 *.db
+*.opendb
